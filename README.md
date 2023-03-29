@@ -103,16 +103,6 @@ Database engine can be MySQL with version of 8.0.19.
 
 Phonebook Application Website URL should be given as output by Cloudformation Service, after the stack created.
 
-Project Skeleton
-004-phonebook-web-application (folder)
-|
-|----readme.md         # Given to the students (Definition of the project)
-|----cfn-template.yml   # To be delivered by students (Cloudformation template)
-|----app.py            # Given to the students (Python Flask Web Application)
-|----templates
-        |----index.html      # Given to the students (HTML template)
-        |----add-update.html # Given to the students (HTML template)
-        |----delete.html     # Given to the students (HTML template)
 Expected Outcome
 Phonebook App Search Page
 
