@@ -1,9 +1,10 @@
-Project-004 : Phonebook Application (Python Flask) deployed on AWS Application Load Balancer with Auto Scaling and Relational Database Service using AWS Cloudformation
-Description
+# Phonebook Application (Python Flask) deployed on AWS Application Load Balancer with Auto Scaling and Relational Database Service using AWS Cloudformation
+
+# Description
 The Phonebook Application aims to create a phonebook application in Python and deployed as a web application with Flask on AWS Application Load Balancer with Auto Scaling Group of Elastic Compute Cloud (EC2) Instances and Relational Database Service (RDS) using AWS Cloudformation Service.
 
-Problem Statement
-Project_004
+# Problem Statement
+
 
 Your company has recently started a project that aims to serve as phonebook web application. You and your colleagues have started to work on the project. Your teammates have developed the UI part the project as shown in the template folder and they need your help to develop the coding part and deploying the app in development environment.
 
@@ -162,7 +163,7 @@ show how to use AWS Cloudformation Service to launch stacks.
 apply git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
 Steps to Solution
-Step 1: Download or clone project definition from clarusway repo on Github
+Step 1: Download or clone project definition from EricA repo on Github
 
 Step 2: Prepare developer's app for production environment
 

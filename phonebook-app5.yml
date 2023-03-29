@@ -82,7 +82,7 @@ Resources:
                 pip3 install flask_mysql
                 echo "${MyDBURI}" > /home/ec2-user/dbserver.endpoint
                 TOKEN="xxxxVVdZEWJQfKR3hXj1G2AsWhJVKet5g22xxxxx"
-                FOLDER="https://$TOKEN@raw.githubusercontent.com/muzeyyenalan/private-my-projects/main/Project-004-Phonebook-Application/"
+                FOLDER="https://$TOKEN@raw.githubusercontent.com/ericalan/private-my-projects/main/Project-004-Phonebook-Application/"
                 curl -s --create-dirs -o "/home/ec2-user/templates/index.html" -L "$FOLDER"templates/index.html
                 curl -s --create-dirs -o "/home/ec2-user/templates/add-update.html" -L "$FOLDER"templates/add-update.html
                 curl -s --create-dirs -o "/home/ec2-user/templates/delete.html" -L "$FOLDER"templates/delete.html
@@ -140,15 +140,15 @@ Resources:
       AllowMajorVersionUpgrade: false
       AutoMinorVersionUpgrade: true
       BackupRetentionPeriod: 0
-      DBInstanceIdentifier: muzeyyen
-      DBName: clarusway_phonebook
+      DBInstanceIdentifier: eric
+      DBName: EricA_phonebook
       DBSecurityGroups: 
         - !Ref RDSSecGrp
       Engine: MySQL
       DBInstanceClass: db.t2.micro
       EngineVersion: 8.0.19
       MasterUsername: admin
-      MasterUserPassword: Serdar_1
+      MasterUserPassword: eric123
       Port: 3306
       PubliclyAccessible: true
 Outputs:
