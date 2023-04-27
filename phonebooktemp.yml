@@ -20,7 +20,7 @@ Parameters:
 
   paramKeyName:
     Description: Select your KEYPAIR
-    Type: AWS::EC2::KeyPair::KeyName
+    Type: AWS::EC2::KeyPair::eric-keypair
 
   paramDBName:
     Description: Enter the name of database
@@ -39,7 +39,7 @@ Parameters:
 Mappings:
   RegionImageMap:
     us-east-1:
-      AMI: ami-033b95fb8079dc481
+      AMI: ami-07e17b58812e0c7c2
     us-east-2:
       AMI: ami-0b614a5d911900a9b
     us-west-1:
@@ -161,7 +161,7 @@ Resources:
           - !Ref AWS::Region
           - AMI
         InstanceType: !Ref paramInsType
-        KeyName: !Ref paramKeyName
+        KeyName: !Ref parameric-keypair
         SecurityGroupIds:
           - !GetAtt securityGrpEC2s.GroupId
         TagSpecifications:

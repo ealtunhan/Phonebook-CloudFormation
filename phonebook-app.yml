@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: |
   CloudFormation Template for Phonebook Application. This template creates Application 
-  Load Balancer with Auto Scaling Group of Amazon Linux 2 ( ami-033b95fb8079dc481) EC2 Instances 
+  Load Balancer with Auto Scaling Group of Amazon Linux 2 ( ami-07e17b58812e0c7c2) EC2 Instances 
   which host Python Flask Web Application. EC2 instances are placed within 
   WebServerSecurityGroup which allows http (80) connections only from ALBSecurityGroup, 
   and allows tcp(3306) connections only within itself. RDS DB instance is placed within 
@@ -16,9 +16,9 @@ Parameters:
     Description: VPC Id of your existing account.
     Type: AWS::EC2::VPC::Id
   
-  KeyName:
+  eric-keypair:
     Description: Please enter your valid Key pair.
-    Type: AWS::EC2::KeyPair::KeyName
+    Type: AWS::EC2::KeyPair::eric-keypair
 
   Subnets:
     Description: Choose your subnets.
@@ -56,9 +56,9 @@ Resources:
     Type: AWS::EC2::LaunchTemplate
     Properties:
       LaunchTemplateData:
-        ImageId:  ami-033b95fb8079dc481
+        ImageId:  ami-07e17b58812e0c7c2
         InstanceType: t2.micro
-        KeyName: !Ref KeyName
+        KeyName: !Ref eric-keypair
         SecurityGroupIds:
           - !GetAtt WebServerSecurityGroup.GroupId
         TagSpecifications:

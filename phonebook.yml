@@ -16,20 +16,20 @@ Parameters:
      - t3.nano
   myKP:
     Description: Select your Key
-    Type: AWS::EC2::KeyPair::KeyName
+    Type: AWS::EC2::KeyPair::eric-keypair
   
 Mappings:
   RegionImageMap:
     us-east-1:
-      AMI: ami-0dc2d3e4c0f9ebd18
+      AMI: ami-02396cdd13e9a1257
     us-east-2:
-      AMI: ami-0233c2d874b811deb
+      AMI: ami-0578f2b35d0328762
     us-west-1:
-      AMI: ami-0ed05376b59b90e46
+      AMI: ami-0127b2e6f3b9b94d5
     us-west-2:
-      AMI: ami-0dc8f589abe99f538
-    eu-west-1:
-      AMI: ami-058b1b7fe545997ae
+      AMI: ami-009c5f630e96948cb
+    ca-central-1:
+      AMI: ami-07e17b58812e0c7c2
 
   
   
